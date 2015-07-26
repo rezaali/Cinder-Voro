@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cinder>
+<block
+	name="Voro++"
+	id="gov.lbl.math"
+	git="git://github.com/rezaali/Cinder-Voro.git"
+	url="http://math.lbl.gov/voro++/"
+	author="Chris H. Rycroft, Cinder Block by Reza Ali"
+	summary="A 3D Voronoi Cell Library in C++"
+	license="Modified BSD"
+	>
+    <supports os="macosx" />
+    <includePath>include</includePath>
+	<headerPattern>include/*.hh</headerPattern>
+	<sourcePattern>src/*.cc</sourcePattern>
+    <platform os="macosx">
+        <staticLibrary>lib/macosx/libvoro++.a</staticLibrary>
+        <includePath system="true">include/macosx</includePath>
+    </platform>
+</block>
+</cinder>
